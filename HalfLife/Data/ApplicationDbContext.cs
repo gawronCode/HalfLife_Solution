@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using HalfLife.Models.DbModels;
 
 namespace HalfLife.Data
 {
@@ -12,5 +13,8 @@ namespace HalfLife.Data
             : base(options)
         {
         }
+
+        public DbSet<Substance> Substances { get; set; }
+        public DbSet<AppUser> AppUsers { get; set; }
     }
 }
