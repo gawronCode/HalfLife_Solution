@@ -76,6 +76,7 @@ namespace HalfLife
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
                 endpoints.MapRazorPages();
+               // dasd 
             });
         }
     }
