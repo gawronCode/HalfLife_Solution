@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace HalfLife.Repositories.IRepos
 {
-    interface IGeneralRepo<T> where T : class
+    public interface IGeneralRepo<T> where T : class
     {
         Task<T> GetById(int id);
         Task<bool> Create(T entity);

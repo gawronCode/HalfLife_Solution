@@ -6,7 +6,7 @@ using HalfLife.Models.DbModels;
 
 namespace HalfLife.Repositories.IRepos
 {
-    interface ISubstanceRepo : IGeneralRepo<Substance>
+    public interface ISubstanceRepo : IGeneralRepo<Substance>
     {
     }
 }
