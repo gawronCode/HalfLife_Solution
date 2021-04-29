@@ -6,16 +6,15 @@ using System.Threading.Tasks;
 
 namespace HalfLife.Models.DbModels
 {
-    public class Substance
+    public class AppUserSubstance
     {
         [Key]
         [Required]
         public int Id { get; set; }
         [Required]
-        public string Name { get; set; }
-        public string Description { get; set; }
+        public int SubstanceId { get; set; }
+        public Substance Substance { get; set; }
         [Required]
-        public int HalfLifeInMinutes { get; set; }
-        public int AbsorptionTimeInMinutes { get; set; }
+        public string AppUserId { get; set; }
     }
 }
